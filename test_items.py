@@ -7,7 +7,7 @@ def test_add_to_cart_button_exists(browser):
     browser.get(link)
     #time.sleep(30)
     try:
-        assert browser.find_element_by_css_selector("[data-loading-tex]")
+        assert browser.find_element_by_css_selector("[data-loading-text]")
 
     except NoSuchElementException:
         assert False, "Cannot find 'Add to cart button'"
